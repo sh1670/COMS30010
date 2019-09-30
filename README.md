@@ -12,7 +12,7 @@ More specifically,
 
 - [`./vagrant`](./vagrant)
   houses
-  a unit-specific
+  a unit-specific,
   [Vagrant](https://www.vagrantup.com)-based 
   VM configuration,
 
