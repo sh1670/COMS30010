@@ -1,0 +1,64 @@
+ p            { text-align: justify; text-justify: inter-word; }
+ li           { text-align: justify; text-justify: inter-word; }
+
+ table        { border-collapse: collapse; empty-cells: show; }
+
+ table.staff    tr {
+   height : 3em;
+ }
+ table.material tr {
+   height : 4em;
+ }
+ table.group    tr {
+   height : 1em;
+ }
+
+ td.gap   {  
+                                                                                              
+ }
+ td.blank { 
+   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #f1f1f1; 
+ }
+ td.ta    { 
+   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffffcc; 
+ }
+ td.lec1  { 
+   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ccffff; 
+ }
+ td.lec2  { 
+   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ccffcc; 
+ }
+ td.lec3  { 
+   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffcccc; 
+ }
+
+ .vertical-text-outer {
+   display: inline-block;
+   overflow: hidden;
+   width: 1.5em;
+ }
+ .vertical-text-inner {
+   display: inline-block;
+   white-space: nowrap;
+   line-height: 1.5;
+   transform: translate(0,100%) rotate(-90deg);
+   transform-origin: 0 0;
+ }
+ 
+ .vertical-text-inner:after {
+   content: "";
+   display: block;
+   margin: -1.5em 0 100%;
+ }
+
+ .extra       { 
+   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #f1f1f1; opacity: 0.25; transition: opacity .25s ease-in-out;
+
+           transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+ }
+
+ .extra:hover {
+   opacity: 1.00;
+ }
