@@ -2,10 +2,9 @@
 
 <!--- -------------------------------------------------------------------- --->
 
-This repo. captures (selected) material related to the unit
-[COMS30010](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30010):
-Applied Cryptography,
-operated by the
+This repo. captures (selected) material related to the
+[COMS30010](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30010)
+unit, as operated by the
 [Department of Computer Science](https://www.cs.bris.ac.uk),
 [University of Bristol](https://www.bristol.ac.uk).
 More specifically, 

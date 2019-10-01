@@ -18,12 +18,12 @@ Vagrant.configure( "2" ) do |config|
   # configure virtual machine
   config.vm.provider "virtualbox" do |vb|
     # enable USB
-    vb.customize [ "modifyvm", :id, "--usb",     "on" ]
-    vb.customize [ "modifyvm", :id, "--usbehci", "on" ]
-    vb.customize [ "modifyvm", :id, "--usbxhci", "on" ]
+    vb.customize [ "modifyvm", :id, "--usb",     "on" ] # USB 1.x
+    vb.customize [ "modifyvm", :id, "--usbehci", "on" ] # USB 2.x
+    vb.customize [ "modifyvm", :id, "--usbxhci", "on" ] # USB 3.x
     # filter USB devices (i.e., allow pass-through from host to virtual machine)
-    vb.customize [ "usbfilter", "add", "0", "--target", :id, "--name", "scale-board", "--vendorid", "0x0403", "--productid", "0x6001" ]
-    vb.customize [ "usbfilter", "add", "0", "--target", :id, "--name", "scale-scope", "--vendorid", "0x0ce9", "--productid", "0x1016" ]
+    vb.customize [ "usbfilter", "add", "0", "--target", :id, "--name", "scale-board", "--vendorid", "0x0403", "--productid", "0x6001" ] # SCALE board
+    vb.customize [ "usbfilter", "add", "0", "--target", :id, "--name", "scale-scope", "--vendorid", "0x0ce9", "--productid", "0x1016" ] # SCALE scope (i.e., PicoScope)
   end
 
   # provisioning step: general-purpose prologue
