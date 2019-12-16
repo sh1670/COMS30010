@@ -5,11 +5,17 @@
 - Install various pre-requisites, i.e.,
 
   - [VirtualBox](https://www.virtualbox.org)
-    (including any extension packs necessary, e.g., for USB device support)
+    including any extension packs necessary, e.g., for USB device support,
     and
   - [Vagrant](https://www.vagrantup.com),
+    plus associated plug-ins, as need be, via
 
-  noting that
+    ```sh
+    vagrant plugin install vagrant-disksize
+    vagrant plugin install vagrant-reload
+    ```
+
+  Note that
   some features of the VM
   (e.g., access to USB devices)
   *may* demand you are a member of the

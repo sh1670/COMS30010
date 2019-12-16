@@ -60,7 +60,7 @@ cd ..
 rm --force --recursive libserialport-0.1.1.tar.gz libserialport-0.1.1
 
 # software install: SCALE repo. (e.g., for BSP)
-git clone http://www.github.com/danpage/scale-hw.git /home/vagrant/${UNIT_CODE}/scale-hw
+git clone --branch ${UNIT_CODE}_${UNIT_YEAR} http://www.github.com/danpage/scale-hw.git /home/vagrant/${UNIT_CODE}/scale-hw
 
 # system configuration: group membership
 sudo usermod --append --groups pico    vagrant
