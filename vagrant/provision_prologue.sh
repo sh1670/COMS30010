@@ -23,3 +23,6 @@ sudo apt-get --quiet --assume-yes install xauth
 sudo usermod --append --groups vboxsf  vagrant
 sudo usermod --append --groups dialout vagrant
 sudo usermod --append --groups plugdev vagrant
+
+# system configuration: file system structure
+sudo mkdir --parents /opt/software
