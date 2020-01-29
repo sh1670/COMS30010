@@ -8,23 +8,32 @@
     including any extension packs necessary, e.g., for USB device support,
     and
   - [Vagrant](https://www.vagrantup.com),
-    plus associated plug-ins, as need be, via
+    plus associated plug-ins, as need be, e.g., by executing
 
     ```sh
     vagrant plugin install vagrant-disksize
     vagrant plugin install vagrant-reload
     ```
 
-  Note that
-  some features of the VM
-  (e.g., access to USB devices)
-  *may* demand you are a member of the
-  [`vboxusers`](https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers);
-  group; you can ensure this by executing
+  Note that:
 
-  ```sh
-  sudo usermod --append --groups vboxusers ${USER}
-  ```
+  - using a recent version of VirtualBox is *strongly* recommended:
+    currently this is 6.x, whereas you may get 5.x when using some
+    package managers,
+  - when using a Windows-based host, you may *also* need to install
+    an X server 
+    (e.g., [https://freedesktop.org/wiki/Xming])
+    in order to support forwarded X11 client interfaces,
+    and
+  - some features of the VM
+    (e.g., access to USB devices)
+    *may* demand you are a member of the
+    [`vboxusers`](https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers);
+    group; you can ensure this by executing
+
+    ```sh
+    sudo usermod --append --groups vboxusers ${USER}
+    ```
 
 - Launch the VM using *either* of the following approaches:
 
@@ -98,7 +107,7 @@
   vagrant ssh
   ```
 
-  noting that
+  Note that:
 
   - `/home/vagrant/COMS30010`
     will house
