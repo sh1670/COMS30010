@@ -1,4 +1,4 @@
-# COMS30010-specific, [Vagrant](https://www.vagrantup.com)-based VM
+# A [Vagrant](https://www.vagrantup.com)-based VM for COMS30010
 
 <!--- -------------------------------------------------------------------- --->
 
@@ -22,7 +22,7 @@
     package managers,
   - when using a Windows-based host, you may *also* need to install
     an X server 
-    (e.g., [https://freedesktop.org/wiki/Xming])
+    (e.g., (Xming)[https://freedesktop.org/wiki/Xming])
     in order to support forwarded X11 client interfaces,
     and
   - some features of the VM
