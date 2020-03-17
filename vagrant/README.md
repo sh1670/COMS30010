@@ -1,4 +1,4 @@
-# [Vagrant](https://www.vagrantup.com)-based VM configuration
+# COMS30010-specific, [Vagrant](https://www.vagrantup.com)-based VM
 
 <!--- -------------------------------------------------------------------- --->
 
@@ -100,12 +100,35 @@
        after which the VM boots:
        this may take some time.
 
-- Access the VM 
-  by executing
+- Access the VM:
 
-  ```sh
-  vagrant ssh
-  ```
+  - check the SSH configuration matches what you expect
+    by executing
+
+    ```sh
+    vagrant ssh-config
+    ```
+
+  - automatically
+    use SSH to access the VM, e.g.,
+    by executing
+
+    ```sh
+    vagrant ssh
+    ```
+
+  - manually
+    use SSH to access the VM, e.g.,
+    by executing
+
+    ```sh
+    ssh vagrant@localhost -p 2222 -i .vagrant/machines/default/virtualbox/private_key -X
+    ```
+
+    where 
+    `-p` specifies a port (on `localhost`) matching the SSH configuration,
+    `-i` specifies an identity whereby the private key for `vagrant` is used, and
+    `-X` enables X11 forwarding, i.e., display of GUI applications on the host desktop.
 
   Note that:
 
